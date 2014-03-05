@@ -6,7 +6,7 @@
  * Time: 08:51
  */
 
-namespace Captaindoe;
+namespace captaindoe;
 
 
 use Unirest;
@@ -15,7 +15,7 @@ class Wali {
 
     public $apiKey;
     public $protocolID;
-    public $apiBase    = 'https://wali.io/v1';
+    public $apiBase    = 'https://www.wali.io/v1';
 
     /**
      * Körs när Wali initieras.

@@ -1,32 +1,21 @@
 <?php
 
+use captaindoe\Wali;
+
 require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Composer autoload
 
-use Captaindoe\Wali;
-
-/**
- * Används för att skapa en engångskod
- */
-$wali = new Wali('api_key', 'protocol_id');
+$wali = new Wali(
+    '5e663b87c664ee2a7c246703027252eb76279f4c',
+    '1eed5cc655ea98d'
+);
 
 try {
-
-    $wali->generate('phone number');
-} catch(Exception $ex) {
-
-    echo $ex->getMessage();
+    $wali->generate("0735295405");
+} catch (Exception $ex) {
+    echo json_encode(array('status' => false, 'error' => $ex->getMessage()));
+    die();
 }
 
-
-/**
- * Används för att verifiera en engångskod.
- */
-try {
-
-    $wali->verify('phone number', 'code');
-} catch(Exception $ex) {
-
-    echo $ex->getMessage();
-}
+echo json_encode(array('status' => true));
 
 ?>
