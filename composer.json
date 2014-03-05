@@ -1,0 +1,22 @@
+{
+    "name": "captaindoe/wali",
+    "description": "PHP bibliotek för en Wali. Wali är en kostnadsfri tjänst för tvåstegsverifiering.",
+    "keywords": ["tvåstegsverifiering", "two step verification", "2 step verification", "two factor verification", "2 factor verification"],
+    "homepage": "https://wali.io",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "David Wibergh",
+            "email": "david@wibergh.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "captaindoe": "src/"
+        }
+    },
+    "require": {
+        "mashape/unirest-php": "dev-master",
+        "php": ">=5.3.0"
+    }
+}
