@@ -94,7 +94,7 @@ class Wali {
             'code'      => $code
         );
 
-        $response = Unirest::get( $this->apiBase . '/generate',
+        $response = Unirest::get( $this->apiBase . '/verify',
             array( "Accept" => "application/json" ),
             $params
         );
