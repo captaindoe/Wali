@@ -1,7 +1,7 @@
 {
     "name": "captaindoe/wali",
     "description": "PHP bibliotek för en Wali. Wali är en kostnadsfri tjänst för tvåstegsverifiering.",
-    "keywords": ["two step verification", "2 step verification", "two factor verification", "2 factor verification"],
+    "keywords": ["two step verification", "2 step verification", "two factor verification", "2 factor verification", "cellphone"],
     "homepage": "https://wali.io",
     "minimum-stability": "dev",
     "authors": [
