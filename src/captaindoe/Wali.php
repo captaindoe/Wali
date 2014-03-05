@@ -6,7 +6,7 @@
  * Time: 08:51
  */
 
-namespace captaindoe;
+namespace Captaindoe;
 
 
 use Unirest;
